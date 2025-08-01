@@ -1,50 +1,89 @@
-# Welcome to your Expo app 👋
+# Awesome Homes - Real Estate Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![Awesome Homes Logo](./assets/images/icon.png)  
+*Your dream home, one tap away.*
 
-## Get started
+---
 
-1. Install dependencies
+## 🏡 About Awesome Homes
 
+**Awesome Homes** is a sleek, user-friendly mobile application built with **React Native** that helps users discover, explore, and connect with their ideal properties. Whether you're searching for a cozy apartment, a modern condo, or a spacious family home, Awesome Homes delivers a seamless real estate experience right from your smartphone.
+
+With advanced search filters, interactive maps, high-resolution photo galleries, and instant contact options, Awesome Homes makes property hunting faster, smarter, and more enjoyable.
+
+---
+
+## 🚀 Features
+
+- **Property Listings**: Browse thousands of homes for sale or rent with detailed descriptions, pricing, and amenities.
+- **Advanced Search & Filters**: Filter by price range, bedrooms, bathrooms, property type, location, and more.
+- **Interactive Map View**: Explore listings on an integrated map with real-time location pins.
+- **Favorites & Saved Searches**: Save your favorite homes and set up alerts for new matches.
+- **Photo Galleries**: High-quality image carousels for immersive property previews.
+- **In-App Messaging**: Contact agents directly from the app.
+- **Offline Mode**: View recently browsed listings without internet.
+- **Dark Mode Support**: Eye-friendly interface for all lighting conditions.
+- **Push Notifications**: Get alerts for price drops, open houses, and new listings.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React Native (iOS & Android)
+- **State Management**: Redux Toolkit
+- **Navigation**: React Navigation (Stack, Tab, Drawer)
+- **Styling**: Styled Components & React Native Paper
+- **Backend Integration**: RESTful API / GraphQL (with Axios or Apollo Client)
+- **Authentication**: Firebase Auth / JWT
+- **Maps**: React Native Maps (Google Maps or Mapbox)
+- **Image Caching**: React Native Fast Image
+- **Testing**: Jest, React Native Testing Library
+- **CI/CD**: GitHub Actions / Fastlane
+
+---
+
+## 📱 Screenshots
+
+| Home Screen | Search Filters | Property Detail |
+|-----------|----------------|------------------|
+| ![Home]() | ![Filters]()) | ![Detail]() |
+
+
+
+---
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js (v16 or higher)
+- React Native CLI or Expo CLI
+- Xcode (for iOS) or Android Studio (for Android)
+- Your mobile phone if you don't use any of the above
+
+### Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Benedicity948/re-state.git
+   cd awesome-homes```
+
+2. Install dependencies:
    ```bash
    npm install
-   ```
-
-2. Start the app
-
+       #or
+   yarn install```
+   
+3. Configure Envireonment Variables:
+   Create a .env file in the root directory;
    ```bash
-   npx expo start
-   ```
+   API_BASE_URL=https://your_api_here
+   GOOGLE_MAPS_API_KEY=your_google_maps_key
+   FIREBASE_CONFIG={"apiKey":"..."```
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. Run the app:
+   ```bash
+   npm start #for Expo Users or scan the QR code with the Expo App  
+      #or
+   npx react-native run-android
+      #or
+   npx react-native run-ios```
